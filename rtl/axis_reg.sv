@@ -142,6 +142,10 @@ module axis_reg #
 
     always_ff @(posedge clk) 
     begin
+        if (rst) begin
+            expansion_valid_reg     <= 0;
+            primary_valid_reg       <= 0;
+        end
 
         if (s_axis_tready == 1'b1) begin
             primary_data_reg        <= s_axis;
