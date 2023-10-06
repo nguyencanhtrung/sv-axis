@@ -98,14 +98,22 @@ module axis_fifo #(
     assign s_axis_tid           = s_axis_ifc.tid;
     assign s_axis_tdest         = s_axis_ifc.tdest;
 
-    assign m_axis_ifc.tdata     = m_axis_tdata;
-    assign m_axis_ifc.tvalid    = m_axis_tvalid;
-    assign m_axis_tready        = m_axis_ifc.tready;
-    assign m_axis_ifc.tlast     = m_axis_tlast;
-    assign m_axis_ifc.tkeep     = m_axis_tkeep;
-    assign m_axis_ifc.tuser     = m_axis_tuser;
-    assign m_axis_ifc.tid       = m_axis_tid;
-    assign m_axis_ifc.tdest     = m_axis_tdest;
+    ifc_axis #(
+        .DATA_WIDTH(DATA_WIDTH),
+        .KEEP_WIDTH(KEEP_WIDTH),
+        .USER_WIDTH(USER_WIDTH),
+        .ID_WIDTH(ID_WIDTH),
+        .DEST_WIDTH(DEST_WIDTH)
+    ) o_axis_ifc (clk, rst);
+
+    assign o_axis_ifc.tdata     = m_axis_tdata;
+    assign o_axis_ifc.tvalid    = m_axis_tvalid;
+    assign m_axis_tready        = o_axis_ifc.tready;
+    assign o_axis_ifc.tlast     = m_axis_tlast;
+    assign o_axis_ifc.tkeep     = m_axis_tkeep;
+    assign o_axis_ifc.tuser     = m_axis_tuser;
+    assign o_axis_ifc.tid       = m_axis_tid;
+    assign o_axis_ifc.tdest     = m_axis_tdest;
 
     // ------------------------------------------------------------------------------------------------------------
     // AXIS_SLAVE => [Combining all signals into a bus] => MEM => [Splitting all signals from a bus] => AXIS_MASTER
@@ -131,6 +139,16 @@ module axis_fifo #(
     logic [WIDTH-1:0]       wr_data, rd_data;
     logic                   wr_enb, rd_enb;
     logic                   empty, full;
+
+    // Testbench only
+    // synthesis translate_off
+    initial begin
+        for (int i = 0; i < 2**(ADDR_WIDTH); i = i + 1) begin
+            mem[i] = {WIDTH{1'b0}};
+        end
+    end
+    // synthesis translate_on
+
 
     // ----------------------------------------
     // Memory input
@@ -221,9 +239,29 @@ module axis_fifo #(
         if (rst) begin
             rd_pointer      <= 0;
         end else if (rd_enb) begin
-            rd_data         <= mem[rd_pointer[ADDR_WIDTH-1:0]];
             rd_pointer      <= rd_pointer + 1;
         end
     end
+
+    assign rd_data = mem[rd_pointer[ADDR_WIDTH-1:0]];
+
+    // ----------------------------------------
+    // Register at output for better performance
+    // ----------------------------------------
+    axis_reg #(
+        .DATA_WIDTH     (DATA_WIDTH),
+        .KEEP_ENABLE    (KEEP_ENABLE),
+        .KEEP_WIDTH     (KEEP_WIDTH),
+        .LAST_ENABLE    (LAST_ENABLE),
+        .ID_ENABLE      (ID_ENABLE),
+        .ID_WIDTH       (ID_WIDTH),
+        .DEST_ENABLE    (DEST_ENABLE),
+        .DEST_WIDTH     (DEST_WIDTH),
+        .USER_ENABLE    (USER_ENABLE),
+        .USER_WIDTH     (USER_WIDTH)
+    ) axis_oreg_inst (
+        .s_axis_ifc     (o_axis_ifc),
+        .m_axis_ifc     (m_axis_ifc)
+    );
 
 endmodule
