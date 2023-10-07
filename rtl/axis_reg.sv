@@ -35,7 +35,7 @@
 module axis_reg #
 (
     parameter DATA_WIDTH    = 8,
-    parameter KEEP_ENABLE   = (DATA_WIDTH > 8),
+    parameter KEEP_ENABLE   = 0,
     parameter KEEP_WIDTH    = ((DATA_WIDTH+7)/8),
     parameter LAST_ENABLE   = 0,
     parameter ID_ENABLE     = 0,
