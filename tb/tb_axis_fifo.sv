@@ -122,7 +122,6 @@ initial begin
     // m_axis_ifc.tready = 1'b1;
     while(1) begin
         @(posedge clk) m_axis_ifc.tready = $random % 2;
-        @(posedge clk);
     end
 end
 
@@ -131,7 +130,7 @@ logic [DATA_WIDTH-1:0] mem [0:2047];
 initial begin
     #(2*CLK_PERIOD);
     for(int i = 0; i < 2048; i++) begin
-        mem[i] = $urandom;
+        mem[i] = {$urandom, $urandom, $urandom, $urandom};;
     end
 end
 
@@ -149,9 +148,13 @@ initial begin
     #(10*CLK_PERIOD);
     #(10*CLK_PERIOD);
 
-    @(posedge clk)
+    @(posedge clk); #1;
     while(!test_done) begin
-        while(!s_axis_ifc.tready) @(posedge clk);
+        while(!s_axis_ifc.tready) begin
+            @(posedge clk);
+            #1;
+        end
+
         s_axis_ifc.tdata    = mem[ii%2048];
         s_axis_ifc.tvalid   = $random % 2;
         ii = (s_axis_ifc.tvalid ) ? ii + 1 : ii;
@@ -161,7 +164,7 @@ initial begin
         end
 
         s_axis_ifc.tlast = test_done;
-        @(posedge clk);
+        @(posedge clk); #1;
     end
 end
 
@@ -174,9 +177,12 @@ initial begin
     check_done = 0;
     #(10*CLK_PERIOD);
 
-    @(posedge clk)
+    @(posedge clk); #1;
     while(!check_done) begin
-        while(!(m_axis_ifc.tvalid & m_axis_ifc.tready)) @(posedge clk);
+        while(!(m_axis_ifc.tvalid & m_axis_ifc.tready)) begin 
+            @(posedge clk);
+            #1;
+        end
         if(m_axis_ifc.tdata !== mem[ii%2048]) begin
             $display("Error at %d", ii);
             $write("\n  Expected: %h", mem[ii%2048]);
@@ -185,7 +191,7 @@ initial begin
         end
         ii++;
         check_done = m_axis_ifc.tlast;
-        @(posedge clk);
+        @(posedge clk); #1;
     end
 
     $display("AXIS FIFO: PASSED!");

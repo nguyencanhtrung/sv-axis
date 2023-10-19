@@ -121,7 +121,6 @@ module tb;
         // m_axis_ifc.tready = 1'b1;
         while(1) begin
             @(posedge clk) m_axis_ifc.tready = $urandom_range(0, 1);
-            @(posedge clk);
         end
     end
 
@@ -148,9 +147,13 @@ module tb;
         #(10*CLK_PERIOD);
         #(10*CLK_PERIOD);
 
-        @(posedge clk)
+        @(posedge clk); #1;
         while(!test_done) begin
-            while(!s_axis_ifc.tready) @(posedge clk);
+            while(!s_axis_ifc.tready) begin 
+                @(posedge clk);
+                #1;
+            end
+
             s_axis_ifc.tdata    = mem[ii%2048];
             s_axis_ifc.tvalid   = $random % 2;
             ii = (s_axis_ifc.tvalid ) ? ii + 1 : ii;
@@ -160,7 +163,7 @@ module tb;
             end
 
             s_axis_ifc.tlast = test_done;
-            @(posedge clk);
+            @(posedge clk); #1;
         end
     end
 
@@ -173,9 +176,12 @@ module tb;
         check_done = 0;
         #(10*CLK_PERIOD);
 
-        @(posedge clk)
+        @(posedge clk); #1;
         while(!check_done) begin
-            while(!(m_axis_ifc.tvalid & m_axis_ifc.tready)) @(posedge clk);
+            while(!(m_axis_ifc.tvalid & m_axis_ifc.tready)) begin
+                @(posedge clk);
+                #1;
+            end
 
             if(m_axis_ifc.tdata !== mem[ii%2048]) begin
                 $write("Error at %0d", ii);
@@ -185,7 +191,7 @@ module tb;
             end
             ii++;
             check_done = m_axis_ifc.tlast;
-            @(posedge clk);
+            @(posedge clk); #1;
         end
 
         $display("AXIS REG: PASSED!");
