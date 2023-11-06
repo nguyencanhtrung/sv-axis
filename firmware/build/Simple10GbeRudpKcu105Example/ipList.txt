@@ -1,0 +1,1 @@
+/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/common/ip/SystemManagementCore.xci

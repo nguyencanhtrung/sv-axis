@@ -1,0 +1,4670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xcku040-ffva1156-2-e" LaunchTime="1699262664">
+  <File Type="RDS-RDS" Name="Simple10GbeRudpKcu105Example.vds"/>
+  <File Type="REPORTS-TCL" Name="Simple10GbeRudpKcu105Example_reports.tcl"/>
+  <File Type="PA-TCL" Name="Simple10GbeRudpKcu105Example.tcl"/>
+  <File Type="RDS-DCP" Name="Simple10GbeRudpKcu105Example.dcp"/>
+  <File Type="RDS-UTIL" Name="Simple10GbeRudpKcu105Example_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Simple10GbeRudpKcu105Example_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/xvc-udp/dcp/UltraScale/Impl/images/UdpDebugBridge.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/TenGigEthCore/gthUltraScale/ip/TenGigEthGthUltraScale156p25MHzCore.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/rtl/StdRtlPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/rtl/TextUtilPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/rtl/AxiLitePkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/general/rtl/IoBufWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/sync/rtl/Synchronizer.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/sync/rtl/RstSync.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/sync/rtl/SynchronizerEdge.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/sync/rtl/SynchronizerOneShot.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/sync/rtl/SynchronizerVector.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/fifo/rtl/inferred/FifoWrFsm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/fifo/rtl/inferred/FifoRdFsm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/ram/inferred/SimpleDualPortRam.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/fifo/rtl/FifoOutputPipeline.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/fifo/rtl/inferred/FifoAsync.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/sync/rtl/SynchronizerFifo.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/sync/rtl/SynchronizerOneShotCnt.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/rtl/AxiLiteAsync.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/bridge/rtl/AxiLiteToDrp.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/rtl/ArbiterPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/rtl/AxiLiteCrossbar.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssi/rtl/SsiPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/rssi/v1/rtl/RssiPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../common/rtl/AppTx.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/ram/xilinx/TrueDualPortRamXpm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/ram/dummy/TrueDualPortRamXpmAlteraMfDummy.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/ram/inferred/TrueDualPortRam.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/ram/inferred/LutRam.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/ram/inferred/DualPortRam.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/rtl/AxiDualPortRam.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../common/rtl/App.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/IpV4Engine/rtl/ArpEngine.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/DspComparator.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/sync/rtl/SyncMinMax.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/sync/rtl/SyncTrigRate.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/rtl/I2cPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/rtl/AxiLiteMaster.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/rtl/AxiLiteMasterProxy.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/rtl/I2cMaster.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/rtl/I2cRegMaster.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/rtl/I2cRegMasterAxiBridge.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/axi/AxiI2cRegMasterCore.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/rtl/I2cMuxPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/axi/AxiLiteCrossbarI2cMux.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/fifo/rtl/xilinx/FifoXpm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/fifo/rtl/dummy/FifoAlteraMfDummy.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/fifo/rtl/inferred/FifoSync.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/fifo/rtl/Fifo.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/fifo/rtl/FifoCascade.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/sync/rtl/SynchronizerOneShotCntVector.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/sync/rtl/SyncStatusVector.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamPipeline.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamResize.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamGearbox.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamFifoV2.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Micron/n25q/rtl/AxiMicronN25QReg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Micron/n25q/rtl/AxiMicronN25QCore.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamMon.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamMonAxiL.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/ram/xilinx/SimpleDualPortRamXpm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/ram/dummy/SimpleDualPortRamAlteraMfDummy.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/rssi/v1/rtl/RssiParamSync.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/rssi/v1/rtl/RssiAxiLiteRegItf.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/rssi/v1/rtl/RssiConnFsm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/rssi/v1/rtl/RssiMonitor.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/rssi/v1/rtl/RssiHeaderReg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamMux.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/packetizer/rtl/AxiStreamPacketizer2Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/crc/rtl/CrcPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/crc/rtl/Crc32Parallel.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/crc/rtl/Crc32.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/packetizer/rtl/AxiStreamPacketizer2.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/packetizer/rtl/AxiStreamDepacketizer2.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamDeMux.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/packetizer/rtl/AxiStreamDepacketizer.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/rtl/RstPipeline.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/packetizer/rtl/AxiStreamPacketizer.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/general/rtl/DeviceDna.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Maxim/rtl/DS2411Core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/general/rtl/Iprog.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/rtl/AxiVersion.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssi/rtl/SsiFrameLimiter.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/srp/rtl/SrpV3AxiLite.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/UltraScale/gthUs/rtl/GthUltraScaleQuadPll.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/rtl/Heartbeat.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/rtl/PwrUpRst.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/TenGigEthCore/core/rtl/TenGigEthPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/TenGigEthCore/gthUltraScale/rtl/TenGigEthGthUltraScaleClk.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacTxFifo.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacTxBypass.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacTxCsum.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacTxPause.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacTxExportXlgmii.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacTxExportXgmii.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacTxExportGmii.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacTxExport.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacTx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacFlowCtrl.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacRxImportXlgmii.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacRxImportXgmii.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacRxImportGmii.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacRxImport.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacRxPause.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacRxCsum.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacRxBypass.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacRxFilter.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacRx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssi/rtl/SsiIbFrameFilter.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssi/rtl/SsiObFrameFilter.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssi/rtl/SsiFifo.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacRxFifo.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacTop.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/TenGigEthCore/gthUltraScale/rtl/TenGigEthGthUltraScaleRst.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/TenGigEthCore/core/rtl/TenGigEthReg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/TenGigEthCore/gthUltraScale/rtl/TenGigEthGthUltraScale.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/TenGigEthCore/gthUltraScale/rtl/TenGigEthGthUltraScaleWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/IpV4Engine/rtl/IpV4EngineDeMux.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/IpV4Engine/rtl/IpV4EngineRx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/IpV4Engine/rtl/IpV4EngineTx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/IpV4Engine/rtl/IcmpEngine.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/IpV4Engine/rtl/IgmpV2Engine.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/IpV4Engine/rtl/IpV4Engine.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/UdpEngine/rtl/UdpEngineRx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/UdpEngine/rtl/UdpEngineDhcp.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/UdpEngine/rtl/UdpEngineTx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/UdpEngine/rtl/UdpEngineArp.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/UdpEngine/rtl/UdpEngine.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/UdpEngine/rtl/UdpEngineWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/xvc-udp/rtl/UdpDebugBridgeWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/rssi/v1/rtl/RssiTxFsm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/rssi/v1/rtl/RssiChksum.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/rssi/v1/rtl/RssiRxFsm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/rssi/v1/rtl/RssiCore.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/rssi/v1/rtl/RssiCoreWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../common/rtl/Rudp.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../common/rtl/Sysmon.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../common/rtl/Core.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/UltraScale/general/rtl/DeviceDnaUltraScale.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/rtl/stdlib.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/UltraScale/general/rtl/IprogUltraScale.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/rtl/i2c_master_bit_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/rtl/i2c_master_byte_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../targets/Simple10GbeRudpKcu105Example/hdl/Simple10GbeRudpKcu105Example.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/BuildInfoPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="ruckus"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi4/rtl/AxiRateGen.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi4/rtl/AxiPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi4/rtl/AxiReadEmulate.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi4/rtl/AxiRam.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi4/rtl/AxiReadPathMux.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi4/rtl/AxiMemTester.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi4/rtl/AxiWriteEmulate.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi4/rtl/AxiReadPathFifo.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi4/rtl/AxiMonAxiL.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi4/rtl/AxiWritePathMux.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi4/rtl/AxiWritePathFifo.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi4/rtl/AxiResize.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi4/ip_integrator/MasterAxiIpIntegrator.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi4/ip_integrator/SlaveAxiIpIntegrator.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/rtl/AxiLiteSequencerRam.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/rtl/AxiLiteFifoPop.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/rtl/AxiLiteFifoPush.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/rtl/AxiLiteRegs.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/rtl/AxiLiteWriteFilter.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/rtl/AxiLiteSlave.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/rtl/AxiLiteRespTimer.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/rtl/AxiLiteRingBuffer.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/rtl/AxiLiteFifoPushPop.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/rtl/AxiLiteRamSyncStatusVector.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/ip_integrator/AxiDualPortRamIpIntegrator.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/ip_integrator/AxiVersionIpIntegrator.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/ip_integrator/MasterAxiLiteIpIntegrator.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-lite/ip_integrator/SlaveAxiLiteIpIntegrator.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamGearboxPack.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamPrbsFlowCtrl.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamGearboxUnpack.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamFlush.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamConcat.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamFrameRateLimiter.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamCombiner.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamTap.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamRingBuffer.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamSplitter.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamShift.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamScatterGather.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/rtl/AxiStreamRepeater.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/ip_integrator/MasterAxiStreamIpIntegrator.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/ip_integrator/SlaveAxiStreamTerminateIpIntegrator.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/ip_integrator/SlaveAxiStreamIpIntegrator.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/ip_integrator/AxiStreamFifoV2IpIntegrator.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/axi-stream/ip_integrator/MasterAxiStreamTerminateIpIntegrator.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/bridge/rtl/SlvArraytoAxiLite.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/bridge/rtl/IpBusToAxiLite.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/bridge/rtl/AxiLiteToIpBus.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/bridge/rtl/AxiToAxiLite.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/dma/rtl/AxiDmaPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/dma/rtl/v1/AxiStreamDma.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/dma/rtl/v1/AxiStreamDmaRingPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/dma/rtl/v1/AxiStreamDmaWrite.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/dma/rtl/v1/AxiStreamDmaRead.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/dma/rtl/v1/AxiStreamDmaFifo.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/dma/rtl/v1/AxiStreamDmaRingRead.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/dma/rtl/v1/AxiStreamDmaRingWrite.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/dma/rtl/v2/AxiStreamDmaV2WriteMux.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/dma/rtl/v2/AxiStreamDmaV2.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/dma/rtl/v2/AxiStreamDmaV2Write.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/dma/rtl/v2/AxiStreamDmaV2Read.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/dma/rtl/v2/AxiStreamDmaV2Desc.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/axi/dma/rtl/v2/AxiStreamDmaV2Fifo.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/delay/rtl/SlvDelayFifo.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/delay/rtl/LutFixedDelay.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/delay/rtl/SlvFixedDelay.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/delay/rtl/SlvDelayRam.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/delay/rtl/SlvDelay.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/crc/rtl/CRC32Rtl.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/fifo/rtl/FifoMux.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/rtl/AsyncGearbox.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/rtl/RstPipelineVector.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/rtl/ClockDivider.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/rtl/PrbsPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/rtl/Gearbox.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/rtl/WatchDogRst.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/rtl/Mux.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/rtl/Debouncer.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/rtl/OneShot.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/rtl/Arbiter.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/rtl/Scrambler.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/rtl/RegisterVector.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/ip_integrator/MasterRamIpIntegrator.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/general/ip_integrator/SlaveRamIpIntegrator.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/ram/xilinx/SinglePortRamPrimitive.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/sync/rtl/SyncTrigPeriod.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/sync/rtl/SynchronizerOneShotVector.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/sync/rtl/SyncClockFreq.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/base/sync/rtl/SyncTrigRateVector.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/core/ComplexFixedPkg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/core/DspPkg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/SfixedDelay.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/CfixedAccumulator.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/SinCosTaylor.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/IirSimple.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/DspAddSub.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/Add3.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/DspPreSubMult.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/SinCosLut.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/SfixedMultAdd.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/CfixedPreAddMult.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/CfixedMult.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/SfixedPreAddMultAdd.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/FirFilterSingleChannel.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/FirAverage.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/SfixedMult.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/CfixedDelay.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/FirFilterMultiChannel.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/BoxcarFilter.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/CfixedMultAdd.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/DspSquareDiffMult.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/SfixedAccumulator.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/BoxcarIntegrator.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/fixed/FirFilterTap.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/logic/DspXor.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/dsp/xilinx/Csa3.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Marvell/Sgmii88E1111/core/Sgmii88E1111Mdio.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Marvell/Sgmii88E1111/lvdsUltraScale/Sgmii88E1111LvdsUltraScale.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Maxim/rtl/Max5443.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Maxim/rtl/Max5443DacCntrl.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Microchip/sy56040/rtl/AxiSy56040Reg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Microchip/sy56040/rtl/AxiSy56040Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Microchip/sy56040/rtl/AxiSy56040Core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Amphenol/LeapXcvr/rtl/LeapXcvrCore.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Amphenol/LeapXcvr/rtl/LeapXcvr.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad5780/rtl/AxiAd5780Reg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad5780/rtl/AxiAd5780Ser.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad5780/rtl/AxiAd5780Core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad5780/rtl/AxiAd5780Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/general/rtl/AdiConfigSlave.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad9467/rtl/AxiAd9467Deser.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad9467/rtl/AxiAd9467Pll.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad9467/rtl/AxiAd9467Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad9467/rtl/AxiAd9467DeserBit.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad9467/rtl/AxiAd9467Reg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad9467/rtl/AxiAd9467Core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad9467/rtl/AxiAd9467Spi.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad9467/rtl/AxiAd9467Mon.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad9249/core/StreamPatternTester.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad9249/core/Ad9249Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad9249/core/Ad9249Config.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad9249/UltraScale/rtl/Ad9249ReadoutGroup.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad9249/UltraScale/rtl/Ad9249Deserializer.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad9681/core/Ad9681Config.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/AnalogDevices/ad9681/core/Ad9681Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Linear/lct2270/rtl/AxiLtc2270Reg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Linear/lct2270/rtl/AxiLtc2270DeserBit.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Linear/lct2270/rtl/AxiLtc2270Deser.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Linear/lct2270/rtl/AxiLtc2270Core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Linear/lct2270/rtl/AxiLtc2270Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Micron/mt28ew/rtl/AxiMicronMt28ewCore.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Micron/mt28ew/rtl/AxiMicronMt28ewPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Micron/mt28ew/rtl/AxiMicronMt28ewReg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Micron/p30/rtl/AxiMicronP30Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Micron/p30/rtl/AxiMicronP30Reg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Micron/p30/rtl/AxiMicronP30Core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Nxp/Sc18Is602/rtl/Sc18Is602.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Nxp/Sc18Is602/rtl/Sc18Is602Core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Silabs/si5324/rtl/Si5324.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Silabs/si5345/rtl/Si5345.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Silabs/si5394/rtl/Si5394I2c.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Silabs/si5394/rtl/Si5394I2cCore.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Ti/adc32rf45/rtl/adc32rf45.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Ti/ads42lb69/rtl/AxiAds42lb69Pll.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Ti/ads42lb69/rtl/AxiAds42lb69DeserBit.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Ti/ads42lb69/rtl/AxiAds42lb69Core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Ti/ads42lb69/rtl/AxiAds42lb69Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Ti/ads42lb69/rtl/AxiAds42lb69Deser.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Ti/ads42lb69/rtl/AxiAds42lb69Reg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Ti/ads54j60/rtl/ads54j60.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Ti/dac7654/rtl/AxiDac7654Reg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Ti/dac7654/rtl/AxiDac7654Spi.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Ti/dac7654/rtl/AxiDac7654Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Ti/dac7654/rtl/AxiDac7654Core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Ti/dp83867/core/SgmiiDp83867Mdio.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Ti/dp83867/lvdsUltraScale/SgmiiDp83867LvdsUltraScale.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Ti/Lmk048Base/rtl/Lmk048Base.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/transceivers/rtl/Sff8472.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Xilinx/xcf128/rtl/AxiXcf128Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Xilinx/xcf128/rtl/AxiXcf128Reg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/devices/Xilinx/xcf128/rtl/AxiXcf128Core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthCrc32Parallel.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthCrc32Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacRxShift.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/EthMacCore/rtl/EthMacTxShift.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/GigEthCore/core/rtl/GigEthReg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/GigEthCore/core/rtl/GigEthPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/GigEthCore/gthUltraScale/rtl/GigEthGthUltraScaleWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/GigEthCore/gthUltraScale/rtl/GigEthGthUltraScale.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/GigEthCore/gthUltraScale/images/GigEthGthUltraScaleCore.dcp">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/GigEthCore/lvdsUltraScale/rtl/GigEthLvdsUltraScale.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/GigEthCore/lvdsUltraScale/ip/GigEthLvdsUltraScaleCore.dcp">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/RawEthFramer/rtl/RawEthFramerRx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/RawEthFramer/rtl/RawEthFramerPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/RawEthFramer/rtl/RawEthFramer.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/RawEthFramer/rtl/RawEthFramerWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/RawEthFramer/rtl/RawEthFramerTx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/TenGigEthCore/core/rtl/TenGigEthRst.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/XauiCore/core/rtl/XauiPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/XauiCore/core/rtl/XauiReg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/XauiCore/gthUltraScale/rtl/XauiGthUltraScaleWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/XauiCore/gthUltraScale/rtl/XauiGthUltraScale.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/ethernet/XauiCore/gthUltraScale/ip/XauiGthUltraScale156p25MHz10GigECore.dcp">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/batcher/rtl/AxiStreamBatcherEventBuilder.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/batcher/rtl/AxiStreamBatcherAxil.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/batcher/rtl/AxiStreamBatcher.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/hamming-ecc/rtl/HammingEccPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/hamming-ecc/rtl/HammingEccDecoder.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/hamming-ecc/rtl/HammingEccEncoder.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/rtl/I2cSlave.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/rtl/I2cRegSlave.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/rtl/I2cRegMasterMux.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/rtl/i2cRegSlave.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/rtl/i2cRamSlave.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/rtl/i2cSlave.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/axi/AxiI2cEepromCore.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/axi/AxiI2cRegMaster.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/i2c/axi/AxiI2cEeprom.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/JesdRxReg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/JesdTestSigGen.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/Jesd204bTx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/JesdIlasGen.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/iq32bTo16b.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/JesdAlignChGen.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/JesdAlignFrRepCh.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/JesdRxLane.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/Jesd204bPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/JesdTxTest.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/JesdSysrefMon.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/Jesd32bTo64b.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/JesdTxLane.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/Jesd204bRx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/JesdTestStreamTx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/Jesd16bTo32b.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/iq16bTo32b.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/JesdSyncFsmTxTest.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/Jesd64bTo32b.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/JesdSyncFsmTx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/Jesd32bTo16b.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/JesdLmfcGen.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/JesdTxReg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jesd204b/rtl/JesdSyncFsmRx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/DebugBridgeJtag/DebugBridgeJtag.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jtag/rtl/AxisToJtag.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jtag/rtl/AxiStreamSelector.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jtag/rtl/JtagSerDesCore.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jtag/rtl/AxisJtagDebugBridge.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jtag/rtl/AxisToJtagCore.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/jtag/rtl/AxisToJtagPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/line-codes/rtl/Decoder12b14b.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/line-codes/rtl/Decoder10b12b.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/line-codes/rtl/Code12b14bPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/line-codes/rtl/Encoder10b12b.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/line-codes/rtl/Encoder8b10b.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/line-codes/rtl/Code8b10bPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/line-codes/rtl/Encoder12b14b.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/line-codes/rtl/Code10b12bPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/line-codes/rtl/Decoder8b10b.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/mdio/rtl/MdioPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/mdio/rtl/MdioLinkIrqHandler.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/mdio/rtl/MdioSeqCore.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/mdio/rtl/MdioCore.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/packetizer/rtl/AxiStreamBytePacker.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp3/core/rtl/Pgp3RxEb.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp3/core/rtl/Pgp3Rx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp3/core/rtl/Pgp3TxProtocol.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp3/core/rtl/Pgp3Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp3/core/rtl/Pgp3RxProtocol.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp3/core/rtl/Pgp3Core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp3/core/rtl/Pgp3RxGearboxAligner.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp3/core/rtl/Pgp3AxiL.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp3/core/rtl/Pgp3Tx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp3/gthUs/rtl/Pgp3GthUsIpWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp3/gthUs/rtl/Pgp3GthUs.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp3/gthUs/rtl/Pgp3GthUsQpll.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp3/gthUs/rtl/Pgp3GthUsWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp3/gthUs/ip/Pgp3GthUsIp15G/Pgp3GthUsIp15G.dcp">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp3/gthUs/ip/Pgp3GthUsIp12G/Pgp3GthUsIp12G.dcp">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp3/gthUs/ip/Pgp3GthUsIp10G/Pgp3GthUsIp10G.dcp">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp3/gthUs/ip/Pgp3GthUsIp6G/Pgp3GthUsIp6G.dcp">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp3/gthUs/ip/Pgp3GthUsIp3G/Pgp3GthUsIp3G.dcp">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp4/core/rtl/Pgp4RxProtocol.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp4/core/rtl/Pgp4AxiL.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp4/core/rtl/Pgp4RxEb.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp4/core/rtl/Pgp4Tx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp4/core/rtl/Pgp4TxProtocol.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp4/core/rtl/Pgp4Rx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp4/core/rtl/Pgp4Core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp4/core/rtl/Pgp4TxLite.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp4/core/rtl/Pgp4TxLiteWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp4/core/rtl/Pgp4Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp4/core/rtl/Pgp4TxLiteProtocol.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp4/core/rtl/Pgp4CoreLite.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp4/gthUs/rtl/Pgp4GthUsWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp4/gthUs/rtl/Pgp4GthUs.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/shared/PgpRxVcFifo.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/shared/PgpXvcWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/shared/PgpTxVcFifo.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2b/core/rtl/Pgp2bRxPhy.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2b/core/rtl/Pgp2bTxPhy.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2b/core/rtl/Pgp2bTxCell.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2b/core/rtl/Pgp2bRxCell.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2b/core/rtl/Pgp2bAxi.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2b/core/rtl/Pgp2bRx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2b/core/rtl/Pgp2bTx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2b/core/rtl/Pgp2bLane.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2b/core/rtl/Pgp2bTxSched.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2b/core/rtl/Pgp2bPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2b/gthUltraScale/rtl/Pgp2bGthUltra.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2b/gthUltraScale/rtl/PgpGthCoreWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2b/gthUltraScale/ip/PgpGthCore.dcp">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2fc/core/rtl/Pgp2fcRx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2fc/core/rtl/Pgp2fcAlignmentController.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2fc/core/rtl/Pgp2fcTxSched.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2fc/core/rtl/Pgp2fcRxPhy.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2fc/core/rtl/Pgp2fcTxPhy.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2fc/core/rtl/Pgp2fcTxCell.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2fc/core/rtl/Pgp2fcPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2fc/core/rtl/CRC7Rtl.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2fc/core/rtl/Pgp2fcAxi.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2fc/core/rtl/Pgp2fcTx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2fc/core/rtl/Pgp2fcRxCell.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2fc/core/rtl/Pgp2fcAlignmentChecker.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pgp/pgp2fc/core/rtl/Pgp2fcLane.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/rssi/v1b/rtl/AxiRssiCoreWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/rssi/v1b/rtl/AxiRssiCore.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/rssi/v1b/rtl/AxiRssiRxFsm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/rssi/v1b/rtl/AxiRssiTxFsm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/rssi/v1b/rtl/AxiRssiPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/saci/rtl/SaciPrepRdout.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/saci/rtl/SaciMasterSync.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/saci/rtl/SaciMaster2.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/saci/rtl/SaciSlaveOld.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/saci/rtl/AxiLiteSaciMaster.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/saci/rtl/SaciMasterPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/saci/rtl/SaciMaster.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/saci/rtl/SaciMultiPixelPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/saci/rtl/SaciSlave.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/saci/rtl/SaciMultiPixel.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/srp/rtl/AxiLiteSrpV0.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/srp/rtl/SrpV3Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/srp/rtl/SrpV0AxiLite.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/srp/rtl/SrpV3Core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/srp/rtl/SrpV3AxiLiteFull.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/srp/rtl/SrpV3Axi.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssi/rtl/SsiPrbsRx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssi/rtl/SsiAxiLiteMaster.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssi/rtl/SsiCmdMaster.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssi/rtl/SsiPrbsRateGen.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssi/rtl/SsiDbgTap.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssi/rtl/SsiCmdMasterPulser.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssi/rtl/SsiIncrementingTx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssi/rtl/SsiCmdMasterPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssi/rtl/SsiPrbsTx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssi/rtl/SsiInsertSof.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssp/rtl/SspLowSpeedDecoder12b14bWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssp/rtl/SspDecoder10b12b.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssp/rtl/SspDecoder12b14b.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssp/rtl/SspEncoder10b12b.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssp/rtl/SspFramer.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssp/rtl/SspLowSpeedDecoder10b12bWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssp/rtl/SspEncoder12b14b.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssp/rtl/SspLowSpeedDecoder8b10bWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssp/rtl/SspDecoder8b10b.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssp/rtl/SspEncoder8b10b.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssp/rtl/SspLowSpeedDecoderLane.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssp/rtl/SspLowSpeedDecoderReg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/ssp/rtl/SspDeframer.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/sugoi/rtl/SugoiAxiLitePixelMatrixConfig.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/sugoi/rtl/SugoiManagerFsm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/sugoi/rtl/SugoiManagerRx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/sugoi/rtl/SugoiSubordinateFsm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/sugoi/rtl/SugoiManagerCore.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/sugoi/rtl/SugoiSubordinateCore.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/sugoi/rtl/SugoiPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/sugoi/rtl/7Series/SugoiManagerRx7Series.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/sugoi/rtl/UltraScale/SugoiManagerRxUltrascale.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/uart/rtl/UartAxiLiteMasterFsm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/uart/rtl/UartRx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/uart/rtl/UartBrg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/uart/rtl/UartWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/uart/rtl/UartAxiLiteMaster.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/uart/rtl/UartTx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/clink/rtl/ClinkTop.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/clink/rtl/ClinkReg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/clink/rtl/ClinkFraming.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/clink/rtl/ClinkPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/clink/rtl/ClinkUart.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/clink/rtl/ClinkUartThrottle.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/clink/rtl/ClinkCtrl.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/clink/rtl/ClinkData.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/clink/UltraScale/ClinkDataClk.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/clink/UltraScale/ClinkDataShift.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/core/rtl/CoaXPressPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/core/rtl/CoaXPressOverFiberBridge.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/core/rtl/CoaXPressTx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/core/rtl/CoaXPressCore.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/core/rtl/CoaXPressRxLane.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/core/rtl/CoaXPressRxHsFsm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/core/rtl/CoaXPressTxLsFsm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/core/rtl/CoaXPressOverFiberBridgeRx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/core/rtl/CoaXPressRx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/core/rtl/CoaXPressRxWordPacker.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/core/rtl/CoaXPressRxLaneMux.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/core/rtl/CoaXPressConfig.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/core/rtl/CoaXPressOverFiberBridgeTx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/core/rtl/CoaXPressEventAckMsg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/core/rtl/CoaXPressAxiL.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/gthUs/rtl/CoaxpressOverFiberGthUsQpll.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/gthUs/rtl/CoaXPressOverFiberGthUsIpWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/gthUs/rtl/CoaxpressOverFiberGthUs.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/coaxpress/gthUs/ip/CoaXPressOverFiberGthUsIp/CoaXPressOverFiberGthUsIp.dcp">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/glink/core/rtl/GLinkTxToRx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/glink/core/rtl/GLinkEncoder.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/glink/core/rtl/GLinkDecoder.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/glink/core/rtl/GLinkPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/htsp/core/rtl/HtspCore.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/htsp/core/rtl/HtspRx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/htsp/core/rtl/HtspPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/htsp/core/rtl/HtspAxiL.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/htsp/core/rtl/HtspTx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pmbus/rtl/AxiLitePMbusMasterCore.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/pmbus/rtl/AxiLitePMbusMaster.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/salt/rtl/SaltPkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/salt/rtl/SaltTx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/salt/rtl/SaltRx.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/salt/rtl/SaltDelayCtrl.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/salt/rtl/SaltRxLvds.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/salt/rtl/SaltTxLvds.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/salt/rtl/SaltTxResize.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/salt/rtl/SaltCore.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/salt/rtl/UltraScale/SaltRxDeser.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/salt/rtl/UltraScale/SaltTxSer.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/spi/rtl/AxiSpiMaster.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/spi/rtl/SpiSlave.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/spi/rtl/SpiMaster.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/protocols/xvc-udp/rtl/DmaXvcWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/general/microblaze/bypass/MicroblazeBasicCoreWrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/general/rtl/Srl16Delay.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/general/rtl/ClkOutBufSingle.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/general/rtl/SelectIoRxGearboxAligner.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/general/rtl/ClkOutBufDiff.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/UltraScale/general/rtl/OutputBufferReg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/UltraScale/general/rtl/InputBufferReg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/UltraScale/general/rtl/SelectioDeserUltraScale.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/UltraScale/general/rtl/Odelaye3Wrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/UltraScale/general/rtl/Idelaye3Wrapper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/UltraScale/general/rtl/SelectioDeserLaneUltraScale.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/UltraScale/general/rtl/Delaye3PatchFsm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/UltraScale/clocking/rtl/ClockManagerUltraScale.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../submodules/surf/xilinx/UltraScale/gthUs/rtl/Gthe3ChannelDummy.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="surf"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Simple10GbeRudpKcu105Example"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../targets/Simple10GbeRudpKcu105Example/hdl/Simple10GbeRudpKcu105Example.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design" PreStepTclHook="$PPRDIR/../../submodules/ruckus/vivado/run/pre/synth.tcl" PostStepTclHook="$PPRDIR/../../submodules/ruckus/vivado/run/post/synth.tcl">
+      <Option Id="FlattenHierarchy">1</Option>
+      <Option Id="Assert">1</Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="SystemManagementCore"/>
+</GenRun>

@@ -4,14 +4,16 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>How to run the Software Development GUI with VCS firmware simulator &mdash; sv-axis 2023 documentation</title>
+  <title>How to run the Software Development GUI with VCS firmware simulator &mdash; Simple-10GbE-RUDP-KCU105-Example v2.5.0-2-gd22e8fd documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=dca6b923"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=46ea2833"></script>
         <script src="../_static/doctools.js?v=888ff710"></script>
         <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../_static/js/theme.js"></script>
@@ -30,7 +32,7 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            sv-axis
+            Simple-10GbE-RUDP-KCU105-Example
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -70,7 +72,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">sv-axis</a>
+          <a href="../index.html">Simple-10GbE-RUDP-KCU105-Example</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -90,12 +92,12 @@
            <div itemprop="articleBody">
              
   <section id="how-to-run-the-software-development-gui-with-vcs-firmware-simulator">
-<span id="how-to-simulation"></span><h1>How to run the Software Development GUI with VCS firmware simulator<a class="headerlink" href="#how-to-run-the-software-development-gui-with-vcs-firmware-simulator" title="Permalink to this heading">¶</a></h1>
+<span id="how-to-simulation"></span><h1>How to run the Software Development GUI with VCS firmware simulator<a class="headerlink" href="#how-to-run-the-software-development-gui-with-vcs-firmware-simulator" title="Permalink to this heading"></a></h1>
 <ul class="simple">
 <li><p>Start up two terminal …</p></li>
 </ul>
 <section id="in-the-first-terminal">
-<h2>In the first terminal<a class="headerlink" href="#in-the-first-terminal" title="Permalink to this heading">¶</a></h2>
+<h2>In the first terminal<a class="headerlink" href="#in-the-first-terminal" title="Permalink to this heading"></a></h2>
 <ol class="arabic">
 <li><p>Setup Vivado and VCS (refer to <a class="reference internal" href="../Setup/vivado_setup.html#setup-vivado-setup"><span class="std std-ref">Vivado and VCS Setup</span></a>)</p></li>
 <li><p><strong>[Ubuntu only]</strong> If you are running in Ubuntu, you will have an error saying that ‘-h’ is and invalid parameter for ‘sh’ during the next step. There is an workaround, but make sure that you know what you are doing because this can have unexpected consequences. If you follow the workaround, I recommend to undo it right after you compile VCS. This link explains what to do: <a class="reference external" href="http://embeddedbuzz.blogspot.com/2012/01/binsh-illegal-option-h.html">http://embeddedbuzz.blogspot.com/2012/01/binsh-illegal-option-h.html</a>.</p></li>
@@ -131,7 +133,7 @@ $<span class="w"> </span>make<span class="w"> </span>vcs
 </ol>
 </section>
 <section id="in-the-second-terminal">
-<h2>In the Second terminal<a class="headerlink" href="#in-the-second-terminal" title="Permalink to this heading">¶</a></h2>
+<h2>In the Second terminal<a class="headerlink" href="#in-the-second-terminal" title="Permalink to this heading"></a></h2>
 <ol class="arabic">
 <li><p>Setup rogue software (refer to <a class="reference internal" href="../Setup/rogue_setup.html#setup-rogue-setup"><span class="std std-ref">Rogue Software Setup</span></a>)</p></li>
 <li><p>run the Development GUI python script with <strong>–ip sim</strong> argument</p>
@@ -156,7 +158,7 @@ $<span class="w"> </span>python<span class="w"> </span>scripts/devGui.py<span cl
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Nguyen Canh Trung.</p>
+    <p>&#169; Copyright 2021, SLAC National Accelerator Laboratory.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

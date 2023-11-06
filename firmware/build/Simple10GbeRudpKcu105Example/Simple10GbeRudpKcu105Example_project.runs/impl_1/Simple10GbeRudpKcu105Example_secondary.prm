@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX8
+Size               256M
+Start Address      0x00000000
+End Address        0x0FFFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x003B79CF    Nov  6 16:41:41 2023    /home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/Simple10GbeRudpKcu105Example.bit

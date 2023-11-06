@@ -1,0 +1,745 @@
+
+*** Running vivado
+    with args -log SystemManagementCore.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SystemManagementCore.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source SystemManagementCore.tcl -notrace
+INFO: [Common 17-1565] set_msg_config should not be used to change the severity of DRC/METHODOLOGY checks. Please use the 'set_property SEVERITY <NEW_SEVERITY> [get_<drc|methodology>_checks <ID>]' command instead.
+INFO: [Common 17-1565] set_msg_config should not be used to change the severity of DRC/METHODOLOGY checks. Please use the 'set_property SEVERITY <NEW_SEVERITY> [get_<drc|methodology>_checks <ID>]' command instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: SystemManagementCore
+Command: synth_design -top SystemManagementCore -part xcku040-ffva1156-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18303
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/opt/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2725.766 ; gain = 374.801 ; free physical = 44959 ; free virtual = 54113
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2148.914; parent = 1940.265; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3736.965; parent = 2728.738; children = 1008.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/SystemManagementCore.vhd:96]
+WARNING: [Synth 8-3819] Generic 'BUILD_INFO_G' not present in instantiated entity will be ignored
+	Parameter C_INSTANCE bound to: SystemManagementCore_axi_xadc - type: string 
+	Parameter C_FAMILY bound to: kintexu - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_INCLUDE_INTR bound to: 1 - type: integer 
+	Parameter C_SIM_MONITOR_FILE bound to: design.txt - type: string 
+INFO: [Synth 8-3491] module 'SystemManagementCore_axi_xadc' declared at '/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/SystemManagementCore_axi_xadc.vhd:142' bound to instance 'U0' of component 'SystemManagementCore_axi_xadc' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/SystemManagementCore.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_axi_xadc' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/SystemManagementCore_axi_xadc.vhd:237]
+	Parameter C_INSTANCE bound to: SystemManagementCore_axi_xadc - type: string 
+	Parameter C_FAMILY bound to: kintexu - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_INCLUDE_INTR bound to: 1 - type: integer 
+	Parameter C_SIM_MONITOR_FILE bound to: design.txt - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_axi_lite_ipif' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/axi_lite_ipif_v1_31_a/hdl/src/vhdl/SystemManagementCore_axi_lite_ipif.vhd:241]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000011111111111 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 64 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 384'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111110000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000111111100000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000001111111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 96'b000000000000000000000000000010000000000000000000000000000001000000000000000000000000000000000001 
+	Parameter C_FAMILY bound to: kintexu - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_slave_attachment' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/axi_lite_ipif_v1_31_a/hdl/src/vhdl/SystemManagementCore_slave_attachment.vhd:227]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 384'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111110000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000111111100000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000001111111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 96'b000000000000000000000000000010000000000000000000000000000001000000000000000000000000000000000001 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 13 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000011111111111 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 64 - type: integer 
+	Parameter C_FAMILY bound to: kintexu - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_address_decoder' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/axi_lite_ipif_v1_31_a/hdl/src/vhdl/SystemManagementCore_address_decoder.vhd:176]
+	Parameter C_BUS_AWIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000011111111111 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 384'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111110000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000111111100000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000001111111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 96'b000000000000000000000000000010000000000000000000000000000001000000000000000000000000000000000001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 6 - type: integer 
+	Parameter C_AW bound to: 11 - type: integer 
+	Parameter C_BAR bound to: 11'b00000000000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized0' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized1' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized2' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b010 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized3' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b011 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized4' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized5' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b101 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized6' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b110 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized7' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b111 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized8' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 11 - type: integer 
+	Parameter C_BAR bound to: 11'b00001000000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized9' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized10' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized11' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0010 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized12' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0011 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized13' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized14' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0101 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized15' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0110 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized16' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0111 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized17' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized18' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized19' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1010 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized20' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1011 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized21' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized22' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1101 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized23' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1110 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized24' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1111 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_pselect_f__parameterized25' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_pselect_f.vhd:167]
+	Parameter C_AB bound to: 1 - type: integer 
+	Parameter C_AW bound to: 11 - type: integer 
+	Parameter C_BAR bound to: 11'b10000000000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_FAMILY bound to: kintexu - type: string 
+	Parameter CE_NUMBERS bound to: 9 - type: integer 
+	Parameter IP_INTR_NUM bound to: 18 - type: integer 
+	Parameter C_SIM_MONITOR_FILE bound to: design.txt - type: string 
+	Parameter MUX_ADDR_NO bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'SystemManagementCore_xadc_core_drp' declared at '/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/SystemManagementCore_xadc_core_drp.vhd:140' bound to instance 'AXI_SYSMON_CORE_I' of component 'SystemManagementCore_xadc_core_drp' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/SystemManagementCore_axi_xadc.vhd:692]
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_xadc_core_drp' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/SystemManagementCore_xadc_core_drp.vhd:185]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_FAMILY bound to: kintexu - type: string 
+	Parameter CE_NUMBERS bound to: 9 - type: integer 
+	Parameter IP_INTR_NUM bound to: 18 - type: integer 
+	Parameter C_SIM_MONITOR_FILE bound to: design.txt - type: string 
+	Parameter MUX_ADDR_NO bound to: 5 - type: integer 
+	Parameter INIT_40 bound to: 16'b0011000000000000 
+	Parameter INIT_41 bound to: 16'b0010111111011110 
+	Parameter INIT_42 bound to: 16'b1001101100000000 
+	Parameter INIT_43 bound to: 16'b0010000000001111 
+	Parameter INIT_45 bound to: 16'b1101111011011100 
+	Parameter INIT_46 bound to: 16'b0000000000000000 
+	Parameter INIT_47 bound to: 16'b0000000000000000 
+	Parameter INIT_48 bound to: 16'b0100111100000001 
+	Parameter INIT_49 bound to: 16'b0000000000000000 
+	Parameter INIT_4A bound to: 16'b0100111100000000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011011100100011 
+	Parameter INIT_51 bound to: 16'b0100111010000001 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1011110101110011 
+	Parameter INIT_54 bound to: 16'b1010101001011111 
+	Parameter INIT_55 bound to: 16'b0100100101100011 
+	Parameter INIT_56 bound to: 16'b1001010101010101 
+	Parameter INIT_57 bound to: 16'b1010111101111011 
+	Parameter INIT_58 bound to: 16'b0100111010000001 
+	Parameter INIT_59 bound to: 16'b0100100101100011 
+	Parameter INIT_5A bound to: 16'b0100100101100011 
+	Parameter INIT_5B bound to: 16'b1001101001110100 
+	Parameter INIT_5C bound to: 16'b0100100101100011 
+	Parameter INIT_5D bound to: 16'b0100010100011110 
+	Parameter INIT_5E bound to: 16'b0100010100011110 
+	Parameter INIT_5F bound to: 16'b1001000111101011 
+	Parameter INIT_60 bound to: 16'b1001101001110100 
+	Parameter INIT_61 bound to: 16'b0100110110100111 
+	Parameter INIT_62 bound to: 16'b1001101001110100 
+	Parameter INIT_63 bound to: 16'b0100110100111001 
+	Parameter INIT_68 bound to: 16'b1001100010111111 
+	Parameter INIT_69 bound to: 16'b0100101111110010 
+	Parameter INIT_6A bound to: 16'b1001100010111111 
+	Parameter INIT_6B bound to: 16'b0100110001011110 
+	Parameter SIM_MONITOR_FILE bound to: design.dat - type: string 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_soft_reset' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/proc_common_v3_00_a/hdl/src/vhdl/SystemManagementCore_soft_reset.vhd:142]
+	Parameter C_SIPIF_DWIDTH bound to: 32 - type: integer 
+	Parameter C_RESET_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'SystemManagementCore_interrupt_control' [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/interrupt_control_v2_01_a/hdl/src/vhdl/SystemManagementCore_interrupt_control.vhd:240]
+	Parameter C_NUM_CE bound to: 16 - type: integer 
+	Parameter C_NUM_IPIF_IRPT_SRC bound to: 1 - type: integer 
+	Parameter C_IP_INTR_MODE_ARRAY bound to: 576'b000000000000000000000000000001010000000000000000000000000000010100000000000000000000000000000101000000000000000000000000000001010000000000000000000000000000010100000000000000000000000000000101000000000000000000000000000001010000000000000000000000000000010100000000000000000000000000000101000000000000000000000000000001010000000000000000000000000000010100000000000000000000000000000101000000000000000000000000000001010000000000000000000000000000010100000000000000000000000000000101000000000000000000000000000001010000000000000000000000000000010100000000000000000000000000000101 
+	Parameter C_INCLUDE_DEV_PENCODER bound to: 0 - type: bool 
+	Parameter C_INCLUDE_DEV_ISC bound to: 0 - type: bool 
+	Parameter C_IPIF_DWIDTH bound to: 32 - type: integer 
+WARNING: [Synth 8-3301] Unused top level parameter/generic BUILD_INFO_G
+WARNING: [Synth 8-6014] Unused sequential element convst_reg_input_reg was removed.  [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/SystemManagementCore_xadc_core_drp.vhd:645]
+WARNING: [Synth 8-7129] Port Bus2IP_Data[1] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[2] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[3] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[4] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[5] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[6] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[7] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[8] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[9] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[10] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[11] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[12] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[13] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_BE[1] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_BE[2] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_BE[3] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_RdCE[0] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_RdCE[1] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_RdCE[2] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_RdCE[3] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_RdCE[4] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_RdCE[5] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_RdCE[6] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_RdCE[9] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_RdCE[11] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_RdCE[12] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_RdCE[13] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_RdCE[14] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_RdCE[15] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_WrCE[0] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_WrCE[1] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_WrCE[2] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_WrCE[3] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_WrCE[4] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_WrCE[5] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_WrCE[6] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_WrCE[9] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_WrCE[11] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_WrCE[12] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_WrCE[13] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_WrCE[14] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Interrupt_WrCE[15] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IPIF_Reg_Interrupts[0] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IPIF_Reg_Interrupts[1] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IPIF_Lvl_Interrupts[0] in module SystemManagementCore_interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[0] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[1] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[2] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[3] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[4] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[5] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[6] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[7] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[8] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[9] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[10] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[11] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[12] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[13] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[14] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[15] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[16] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[17] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[18] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[19] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[20] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[21] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[22] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[23] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[24] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[25] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[26] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[27] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_BE[0] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_BE[1] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_BE[2] in module SystemManagementCore_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_RdCE[0] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_RdCE[5] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_RdCE[6] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_RdCE[7] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_WrCE[0] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_WrCE[5] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_WrCE[6] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_WrCE[7] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[0] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[1] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[2] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[11] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[12] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[0] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[1] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[2] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[3] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[4] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[5] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[6] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[7] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[8] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[9] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[10] in module SystemManagementCore_xadc_core_drp is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2832.703 ; gain = 481.738 ; free physical = 45034 ; free virtual = 54191
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2148.914; parent = 1940.265; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3840.934; parent = 2832.707; children = 1008.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2841.609 ; gain = 490.645 ; free physical = 45034 ; free virtual = 54191
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2148.914; parent = 1940.265; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3849.840; parent = 2841.613; children = 1008.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2841.609 ; gain = 490.645 ; free physical = 45034 ; free virtual = 54191
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2148.914; parent = 1940.265; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3849.840; parent = 2841.613; children = 1008.227
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2847.547 ; gain = 0.000 ; free physical = 45029 ; free virtual = 54186
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/SystemManagementCore_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/SystemManagementCore_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/SystemManagementCore_board.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/SystemManagementCore_board.xdc] for cell 'U0'
+Parsing XDC File [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/SystemManagementCore.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/SystemManagementCore.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.gen/sources_1/ip/SystemManagementCore/SystemManagementCore.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SystemManagementCore_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SystemManagementCore_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/SystemManagementCore_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/SystemManagementCore_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2992.359 ; gain = 0.000 ; free physical = 44980 ; free virtual = 54145
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 17 instances were transformed.
+  FDRSE => FDRSE (FDRE, LUT4, VCC): 17 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2992.359 ; gain = 0.000 ; free physical = 44980 ; free virtual = 54145
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/opt/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2992.359 ; gain = 641.395 ; free physical = 45020 ; free virtual = 54183
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2148.914; parent = 1940.265; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3968.574; parent = 2960.348; children = 1008.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2992.359 ; gain = 641.395 ; free physical = 45020 ; free virtual = 54183
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2148.914; parent = 1940.265; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3968.574; parent = 2960.348; children = 1008.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/SystemManagementCore_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2992.359 ; gain = 641.395 ; free physical = 45020 ; free virtual = 54183
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2148.914; parent = 1940.265; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3968.574; parent = 2960.348; children = 1008.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'SystemManagementCore_slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'SystemManagementCore_slave_attachment'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2992.359 ; gain = 641.395 ; free physical = 45021 ; free virtual = 54185
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2148.914; parent = 1940.265; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3968.574; parent = 2960.348; children = 1008.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 18    
++---Registers : 
+	               32 Bit    Registers := 2     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 128   
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 3     
+	   4 Input   18 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   2 Input    2 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 55    
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2992.359 ; gain = 641.395 ; free physical = 44995 ; free virtual = 54166
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2148.914; parent = 1940.265; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3968.574; parent = 2960.348; children = 1008.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2992.359 ; gain = 641.395 ; free physical = 44767 ; free virtual = 53963
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2354.773; parent = 2146.832; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3979.176; parent = 2970.949; children = 1008.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 3005.961 ; gain = 654.996 ; free physical = 44755 ; free virtual = 53951
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2365.791; parent = 2157.850; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4014.191; parent = 3005.965; children = 1008.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 3005.961 ; gain = 654.996 ; free physical = 44751 ; free virtual = 53948
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2365.791; parent = 2157.850; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4014.191; parent = 3005.965; children = 1008.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_master_reg_inferred:in0[7] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_master_reg_inferred:in0[6] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_master_reg_inferred:in0[5] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_master_reg_inferred:in0[4] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_master_reg_inferred:in0[3] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_master_reg_inferred:in0[2] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_master_reg_inferred:in0[1] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_master_reg_inferred:in0[0] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg_inferred:in0[15] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg_inferred:in0[14] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg_inferred:in0[13] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg_inferred:in0[12] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg_inferred:in0[11] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg_inferred:in0[10] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg_inferred:in0[9] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg_inferred:in0[8] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg_inferred:in0[7] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg_inferred:in0[6] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg_inferred:in0[5] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg_inferred:in0[4] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg_inferred:in0[3] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg_inferred:in0[2] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg_inferred:in0[1] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg_inferred:in0[0] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/dwe_C_master_reg_inferred:in0 to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_slave0_reg_inferred:in0[7] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_slave0_reg_inferred:in0[6] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_slave0_reg_inferred:in0[5] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_slave0_reg_inferred:in0[4] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_slave0_reg_inferred:in0[3] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_slave0_reg_inferred:in0[2] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_slave0_reg_inferred:in0[1] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_slave0_reg_inferred:in0[0] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave0_reg_inferred:in0[15] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave0_reg_inferred:in0[14] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave0_reg_inferred:in0[13] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave0_reg_inferred:in0[12] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave0_reg_inferred:in0[11] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave0_reg_inferred:in0[10] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave0_reg_inferred:in0[9] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave0_reg_inferred:in0[8] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave0_reg_inferred:in0[7] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave0_reg_inferred:in0[6] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave0_reg_inferred:in0[5] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave0_reg_inferred:in0[4] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave0_reg_inferred:in0[3] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave0_reg_inferred:in0[2] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave0_reg_inferred:in0[1] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave0_reg_inferred:in0[0] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/dwe_C_slave0_reg_inferred:in0 to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_slave1_reg_inferred:in0[7] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_slave1_reg_inferred:in0[6] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_slave1_reg_inferred:in0[5] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_slave1_reg_inferred:in0[4] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_slave1_reg_inferred:in0[3] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_slave1_reg_inferred:in0[2] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_slave1_reg_inferred:in0[1] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_slave1_reg_inferred:in0[0] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave1_reg_inferred:in0[15] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave1_reg_inferred:in0[14] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave1_reg_inferred:in0[13] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave1_reg_inferred:in0[12] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave1_reg_inferred:in0[11] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave1_reg_inferred:in0[10] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave1_reg_inferred:in0[9] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave1_reg_inferred:in0[8] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave1_reg_inferred:in0[7] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave1_reg_inferred:in0[6] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave1_reg_inferred:in0[5] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave1_reg_inferred:in0[4] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave1_reg_inferred:in0[3] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave1_reg_inferred:in0[2] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave1_reg_inferred:in0[1] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_slave1_reg_inferred:in0[0] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/dwe_C_slave1_reg_inferred:in0 to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_master_reg2_inferred:in0[7] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_master_reg2_inferred:in0[6] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_master_reg2_inferred:in0[5] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_master_reg2_inferred:in0[4] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_master_reg2_inferred:in0[3] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_master_reg2_inferred:in0[2] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_master_reg2_inferred:in0[1] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/daddr_C_master_reg2_inferred:in0[0] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg2_inferred:in0[15] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg2_inferred:in0[14] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg2_inferred:in0[13] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg2_inferred:in0[12] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg2_inferred:in0[11] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg2_inferred:in0[10] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg2_inferred:in0[9] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg2_inferred:in0[8] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg2_inferred:in0[7] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg2_inferred:in0[6] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg2_inferred:in0[5] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg2_inferred:in0[4] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg2_inferred:in0[3] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg2_inferred:in0[2] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg2_inferred:in0[1] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/di_C_master_reg2_inferred:in0[0] to constant 0
+CRITICAL WARNING: [Synth 8-3295] tying undriven pin AXI_SYSMON_CORE_I/dwe_C_master_reg2_inferred:in0 to constant 0
+CRITICAL WARNING: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3005.961 ; gain = 654.996 ; free physical = 44756 ; free virtual = 53952
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2365.791; parent = 2157.850; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4014.191; parent = 3005.965; children = 1008.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3005.961 ; gain = 654.996 ; free physical = 44756 ; free virtual = 53952
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2365.791; parent = 2157.850; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4014.191; parent = 3005.965; children = 1008.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3005.961 ; gain = 654.996 ; free physical = 44756 ; free virtual = 53952
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2365.791; parent = 2157.850; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4014.191; parent = 3005.965; children = 1008.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3005.961 ; gain = 654.996 ; free physical = 44756 ; free virtual = 53952
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2365.791; parent = 2157.850; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4014.191; parent = 3005.965; children = 1008.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3005.961 ; gain = 654.996 ; free physical = 44756 ; free virtual = 53952
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2365.791; parent = 2157.850; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4014.191; parent = 3005.965; children = 1008.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3005.961 ; gain = 654.996 ; free physical = 44756 ; free virtual = 53952
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2365.791; parent = 2157.850; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4014.191; parent = 3005.965; children = 1008.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |   152|
+|2     |LUT2     |    36|
+|3     |LUT3     |    26|
+|4     |LUT4     |    23|
+|5     |LUT5     |    69|
+|6     |LUT6     |    46|
+|7     |SYSMONE1 |     1|
+|8     |FDRE     |   227|
+|9     |FDSE     |    37|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3005.961 ; gain = 654.996 ; free physical = 44756 ; free virtual = 53952
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2365.791; parent = 2157.850; children = 208.649
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4014.191; parent = 3005.965; children = 1008.227
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 101 critical warnings and 64 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 3005.961 ; gain = 504.246 ; free physical = 44781 ; free virtual = 53977
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3005.969 ; gain = 654.996 ; free physical = 44781 ; free virtual = 53977
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3005.969 ; gain = 0.000 ; free physical = 44816 ; free virtual = 54012
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3029.973 ; gain = 0.000 ; free physical = 44831 ; free virtual = 54028
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 105a827b
+INFO: [Common 17-83] Releasing license: Synthesis
+67 Infos, 104 Warnings, 101 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3029.973 ; gain = 1237.230 ; free physical = 45043 ; free virtual = 54240
+INFO: [Common 17-1381] The checkpoint '/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/SystemManagementCore_synth_1/SystemManagementCore.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/SystemManagementCore_synth_1/SystemManagementCore.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SystemManagementCore_utilization_synth.rpt -pb SystemManagementCore_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  6 16:24:20 2023...

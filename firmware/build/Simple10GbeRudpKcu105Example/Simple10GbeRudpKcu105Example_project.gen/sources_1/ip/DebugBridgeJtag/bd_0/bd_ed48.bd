@@ -1,0 +1,95 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x8D5A69E08D5A69E0",
+      "design_src": "SBD",
+      "device": "xcku040-ffva1156-2-e",
+      "name": "bd_ed48",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "scoped": "true",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "bsip": ""
+    },
+    "ports": {
+      "jtag_tdi": {
+        "direction": "I"
+      },
+      "jtag_tdo": {
+        "direction": "O"
+      },
+      "jtag_tms": {
+        "direction": "I"
+      },
+      "jtag_tck": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "bsip": {
+        "vlnv": "xilinx.com:ip:bsip:1.1",
+        "xci_name": "bd_ed48_bsip_0",
+        "xci_path": "ip/ip_0/bd_ed48_bsip_0.xci",
+        "inst_hier_path": "bsip",
+        "parameters": {
+          "C_CHIP_ID": {
+            "value": "0"
+          },
+          "C_DEVICE_FAMILY": {
+            "value": "0"
+          },
+          "C_EN_MUX": {
+            "value": "0"
+          },
+          "C_EN_MUX_EXT_BS": {
+            "value": "0"
+          },
+          "C_IR_ID_INSTR": {
+            "value": "0"
+          },
+          "C_IR_USER1_INSTR": {
+            "value": "0"
+          },
+          "C_IR_WIDTH": {
+            "value": "0"
+          },
+          "C_USER_SCAN_CHAIN": {
+            "value": "1"
+          },
+          "C_USE_SOFTBSCAN": {
+            "value": "1"
+          }
+        }
+      }
+    },
+    "nets": {
+      "bsip_tap_tdo": {
+        "ports": [
+          "bsip/tap_tdo",
+          "jtag_tdo"
+        ]
+      },
+      "jtag_tck_1": {
+        "ports": [
+          "jtag_tck",
+          "bsip/tap_tck"
+        ]
+      },
+      "jtag_tdi_1": {
+        "ports": [
+          "jtag_tdi",
+          "bsip/tap_tdi"
+        ]
+      },
+      "jtag_tms_1": {
+        "ports": [
+          "jtag_tms",
+          "bsip/tap_tms"
+        ]
+      }
+    }
+  }
+}

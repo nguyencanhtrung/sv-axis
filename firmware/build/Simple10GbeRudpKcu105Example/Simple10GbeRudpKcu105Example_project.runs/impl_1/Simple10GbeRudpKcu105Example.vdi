@@ -1,0 +1,880 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Nov  6 16:30:39 2023
+# Process ID: 19376
+# Current directory: /home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1
+# Command line: vivado -log Simple10GbeRudpKcu105Example.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Simple10GbeRudpKcu105Example.tcl -notrace
+# Log file: /home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/Simple10GbeRudpKcu105Example.vdi
+# Journal file: /home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/vivado.jou
+# Running On: tesla, OS: Linux, CPU Frequency: 3600.000 MHz, CPU Physical cores: 8, Host memory: 67349 MB
+#-----------------------------------------------------------
+source Simple10GbeRudpKcu105Example.tcl -notrace
+INFO: [Common 17-1565] set_msg_config should not be used to change the severity of DRC/METHODOLOGY checks. Please use the 'set_property SEVERITY <NEW_SEVERITY> [get_<drc|methodology>_checks <ID>]' command instead.
+INFO: [Common 17-1565] set_msg_config should not be used to change the severity of DRC/METHODOLOGY checks. Please use the 'set_property SEVERITY <NEW_SEVERITY> [get_<drc|methodology>_checks <ID>]' command instead.
+Command: open_checkpoint /home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/Simple10GbeRudpKcu105Example.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1636.969 ; gain = 0.000 ; free physical = 44798 ; free virtual = 54146
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+Netlist sorting complete. Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.63 . Memory (MB): peak = 2478.609 ; gain = 0.000 ; free physical = 43896 ; free virtual = 53240
+INFO: [Netlist 29-17] Analyzing 1688 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+WARNING: [Timing 38-476] Binary timing data restore encountered an issue: found incompatible netlist checksums (data written by Vivado 2022.2 with checksum c98cf7fb, read by Vivado 2022.2 with checksum 5c372c66)
+WARNING: [Timing 38-477] Binary timing data restore failed. Reverting to non-binary load.
+Parsing XDC File [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_board.xdc]
+Finished Parsing XDC File [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_board.xdc]
+Parsing XDC File [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/e:/projects/firmware/KCU_2015_4/KCU_2015_4.srcs/sources_1/ip/TenGigEthGthUltraScale156p25MHzCore/synth/TenGigEthGthUltraScale156p25MHzCore.xdc:54]
+Finished Parsing XDC File [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_early.xdc]
+Parsing XDC File [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/targets/Simple10GbeRudpKcu105Example/hdl/Simple10GbeRudpKcu105Example.xdc:56]
+Finished Parsing XDC File [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example.xdc]
+Parsing XDC File [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_late.xdc]
+Finished Parsing XDC File [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3118.754 ; gain = 0.000 ; free physical = 43503 ; free virtual = 52843
+Restored from archive | CPU: 0.060000 secs | Memory: 0.010391 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3118.754 ; gain = 0.000 ; free physical = 43503 ; free virtual = 52843
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3203.645 ; gain = 0.000 ; free physical = 43395 ; free virtual = 52738
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 212 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 24 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 3 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM256X1D => RAM256X1D (MUXF7(x4), MUXF8(x2), RAMD64E(x8)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 13 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 99 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 35 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 32 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2022.2 (64-bit) build 3671981
+OpenCheckpoint Checksum | Checksum: 1b4b1388c
+----- Checksum: PlaceDB: ca04546e ShapeSum: eaace41e RouteDB: 00000000 
+open_checkpoint: Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 3203.645 ; gain = 1566.676 ; free physical = 43395 ; free virtual = 52738
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2022.2/data/ip'.
+source /home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/submodules/ruckus/vivado/run/pre/opt.tcl
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_clock_interaction: Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 4121.609 ; gain = 917.965 ; free physical = 42633 ; free virtual = 52145
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.84 . Memory (MB): peak = 4193.645 ; gain = 64.031 ; free physical = 42589 ; free virtual = 52103
+
+Starting Cache Timing Information Task
+Ending Cache Timing Information Task | Checksum: 210e864f2
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4193.645 ; gain = 0.000 ; free physical = 42589 ; free virtual = 52103
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-329] Generating Script for core instance : u_ila_0 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.2 for cell u_ila_0_CV.
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/.Xil/Vivado-19376-tesla/dbg_hub_CV.0/out/xsdbm_gc_late_late.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "rd_clk_period": no such variable
+ [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/.Xil/Vivado-19376-tesla/dbg_hub_CV.0/out/xsdbm_gc_late_late.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/.Xil/Vivado-19376-tesla/dbg_hub_CV.0/out/xsdbm_gc_late_late.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value": no such variable
+ [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/.Xil/Vivado-19376-tesla/dbg_hub_CV.0/out/xsdbm_gc_late_late.xdc:65]
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value": no such variable
+ [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/.Xil/Vivado-19376-tesla/dbg_hub_CV.0/out/xsdbm_gc_late_late.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/.Xil/Vivado-19376-tesla/dbg_hub_CV.0/out/xsdbm_gc_late_late.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "wr_clk_period_2": no such variable
+ [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/.Xil/Vivado-19376-tesla/dbg_hub_CV.0/out/xsdbm_gc_late_late.xdc:73]
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value_2": no such variable
+ [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/.Xil/Vivado-19376-tesla/dbg_hub_CV.0/out/xsdbm_gc_late_late.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/.Xil/Vivado-19376-tesla/dbg_hub_CV.0/out/xsdbm_gc_late_late.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value_2": no such variable
+ [/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/.Xil/Vivado-19376-tesla/dbg_hub_CV.0/out/xsdbm_gc_late_late.xdc:84]
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 4193.645 ; gain = 0.000 ; free physical = 42040 ; free virtual = 51651
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 205bc8546
+
+Time (s): cpu = 00:02:17 ; elapsed = 00:02:26 . Memory (MB): peak = 4193.645 ; gain = 0.000 ; free physical = 42039 ; free virtual = 51650
+
+Phase 2 Retarget
+INFO: [Opt 31-1287] Pulled Inverter U_Core/GEN_ETH.U_Rudp/U_10GigE/GEN_LANE[0].TenGigEthGthUltraScale_Inst/U_TenGigEthReg/GEN_REG.r[config][macConfig][pauseEnable]_i_1 into driver instance U_Core/GEN_ETH.U_Rudp/U_10GigE/GEN_LANE[0].TenGigEthGthUltraScale_Inst/U_TenGigEthReg/GEN_REG.r[config][softRst]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter U_Core/GEN_REAL.U_SysMon/U_SysmonIpCore/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_i_1 into driver instance U_Core/GEN_REAL.U_SysMon/U_SysmonIpCore_i_1, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter U_Core/U_XBAR/r[slave][0][wrReqNum][2]_i_2 into driver instance U_Core/U_XBAR/r[slave][0][wrReqNum][2]_i_4, which resulted in an inversion of 7 pins
+INFO: [Opt 31-1287] Pulled Inverter u_ila_0/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[15]_i_1 into driver instance u_ila_0/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[4]_i_3, which resulted in an inversion of 6 pins
+INFO: [Opt 31-1287] Pulled Inverter u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/current_state[0]_i_1 into driver instance u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/read_addr[9]_i_3, which resulted in an inversion of 12 pins
+INFO: [Opt 31-138] Pushed 259 inverter(s) to 1297 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell u_ila_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell u_ila_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 1bee752c8
+
+Time (s): cpu = 00:02:22 ; elapsed = 00:02:28 . Memory (MB): peak = 4193.645 ; gain = 0.000 ; free physical = 42127 ; free virtual = 51738
+INFO: [Opt 31-389] Phase Retarget created 83 cells and removed 614 cells
+INFO: [Opt 31-1021] In phase Retarget, 492 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
+Phase 3 Constant propagation | Checksum: 1edcda704
+
+Time (s): cpu = 00:02:23 ; elapsed = 00:02:29 . Memory (MB): peak = 4193.645 ; gain = 0.000 ; free physical = 42124 ; free virtual = 51735
+INFO: [Opt 31-389] Phase Constant propagation created 12 cells and removed 2781 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 576 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: 23872aade
+
+Time (s): cpu = 00:02:31 ; elapsed = 00:02:37 . Memory (MB): peak = 4193.645 ; gain = 0.000 ; free physical = 42095 ; free virtual = 51706
+INFO: [Opt 31-389] Phase Sweep created 3 cells and removed 5592 cells
+INFO: [Opt 31-1021] In phase Sweep, 2883 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+INFO: [Opt 31-274] Optimized connectivity to 1 cascaded buffer cells
+Phase 5 BUFG optimization | Checksum: 260116abd
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:02:37 . Memory (MB): peak = 4193.645 ; gain = 0.000 ; free physical = 42089 ; free virtual = 51700
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 1 cells.
+INFO: [Opt 31-1021] In phase BUFG optimization, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 6 Shift Register Optimization | Checksum: 260116abd
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:02:37 . Memory (MB): peak = 4193.645 ; gain = 0.000 ; free physical = 42089 ; free virtual = 51700
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 7 Post Processing Netlist
+Phase 7 Post Processing Netlist | Checksum: 27e22a75f
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:02:37 . Memory (MB): peak = 4193.645 ; gain = 0.000 ; free physical = 42087 ; free virtual = 51698
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 446 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              83  |             614  |                                            492  |
+|  Constant propagation         |              12  |            2781  |                                            576  |
+|  Sweep                        |               3  |            5592  |                                           2883  |
+|  BUFG optimization            |               0  |               1  |                                              1  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            446  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.1 . Memory (MB): peak = 4193.645 ; gain = 0.000 ; free physical = 42073 ; free virtual = 51684
+Ending Logic Optimization Task | Checksum: 22f65bd36
+
+Time (s): cpu = 00:02:33 ; elapsed = 00:02:39 . Memory (MB): peak = 4193.645 ; gain = 0.000 ; free physical = 42073 ; free virtual = 51683
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Power 33-23] Power model is not available for U_EFuse
+INFO: [Power 33-23] Power model is not available for GEN_REAL.U_STARTUPE3
+INFO: [Power 33-23] Power model is not available for DNA_PORT_I
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 163 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 129 WE to EN ports
+Number of BRAM Ports augmented: 118 newly gated: 133 Total Ports: 326
+Ending PowerOpt Patch Enables Task | Checksum: fc864d77
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41988 ; free virtual = 51599
+Ending Power Optimization Task | Checksum: fc864d77
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:19 . Memory (MB): peak = 4948.445 ; gain = 754.801 ; free physical = 42050 ; free virtual = 51661
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 23148b77f
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 42051 ; free virtual = 51667
+Ending Final Cleanup Task | Checksum: 23148b77f
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 42045 ; free virtual = 51661
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 42045 ; free virtual = 51660
+Ending Netlist Obfuscation Task | Checksum: 23148b77f
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 42043 ; free virtual = 51658
+INFO: [Common 17-83] Releasing license: Implementation
+72 Infos, 20 Warnings, 10 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:03:45 ; elapsed = 00:03:07 . Memory (MB): peak = 4948.445 ; gain = 826.836 ; free physical = 42043 ; free virtual = 51658
+source /home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/submodules/ruckus/vivado/run/post/opt.tcl
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.05 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41940 ; free virtual = 51567
+INFO: [Common 17-1381] The checkpoint '/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/Simple10GbeRudpKcu105Example_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41961 ; free virtual = 51598
+INFO: [runtcl-4] Executing : report_drc -file Simple10GbeRudpKcu105Example_drc_opted.rpt -pb Simple10GbeRudpKcu105Example_drc_opted.pb -rpx Simple10GbeRudpKcu105Example_drc_opted.rpx
+Command: report_drc -file Simple10GbeRudpKcu105Example_drc_opted.rpt -pb Simple10GbeRudpKcu105Example_drc_opted.pb -rpx Simple10GbeRudpKcu105Example_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/Simple10GbeRudpKcu105Example_drc_opted.rpt.
+report_drc completed successfully
+source /home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/submodules/ruckus/vivado/run/pre/place.tcl
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41929 ; free virtual = 51578
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 191bf2254
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41929 ; free virtual = 51578
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41929 ; free virtual = 51578
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: e133e037
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41926 ; free virtual = 51575
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 182d1d429
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:14 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41710 ; free virtual = 51401
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 182d1d429
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:14 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41706 ; free virtual = 51400
+Phase 1 Placer Initialization | Checksum: 182d1d429
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:15 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41704 ; free virtual = 51398
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1dc94905c
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:18 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41521 ; free virtual = 51238
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 170f7a4d1
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:19 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41524 ; free virtual = 51238
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 170f7a4d1
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:20 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41524 ; free virtual = 51238
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 1adce4fd1
+
+Time (s): cpu = 00:02:03 ; elapsed = 00:00:49 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41554 ; free virtual = 51208
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 5 LUTNM shape to break, 1659 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 5, two critical 0, total 5, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 731 nets or LUTs. Breaked 5 LUTs, combined 726 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41656 ; free virtual = 51265
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            5  |            726  |                   731  |           0  |           1  |  00:00:01  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            5  |            726  |                   731  |           0  |           9  |  00:00:02  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 1f0a57ea2
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:00:54 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41652 ; free virtual = 51270
+Phase 2.4 Global Placement Core | Checksum: d5d9aefa
+
+Time (s): cpu = 00:02:15 ; elapsed = 00:00:56 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41630 ; free virtual = 51253
+Phase 2 Global Placement | Checksum: d5d9aefa
+
+Time (s): cpu = 00:02:15 ; elapsed = 00:00:56 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41668 ; free virtual = 51293
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: ff80bc55
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:00:57 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41665 ; free virtual = 51305
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 16a43865e
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:01:00 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41659 ; free virtual = 51308
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 14d9f1227
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:04 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41612 ; free virtual = 51259
+
+Phase 3.3.2 DP Optimization
+Phase 3.3.2 DP Optimization | Checksum: edf6bd3f
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:13 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41648 ; free virtual = 51254
+
+Phase 3.3.3 Flow Legalize Slice Clusters
+Phase 3.3.3 Flow Legalize Slice Clusters | Checksum: 1837ad142
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:01:13 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41649 ; free virtual = 51257
+
+Phase 3.3.4 Slice Area Swap
+
+Phase 3.3.4.1 Slice Area Swap Initial
+Phase 3.3.4.1 Slice Area Swap Initial | Checksum: f7e16981
+
+Time (s): cpu = 00:03:06 ; elapsed = 00:01:17 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41610 ; free virtual = 51230
+Phase 3.3.4 Slice Area Swap | Checksum: f7e16981
+
+Time (s): cpu = 00:03:07 ; elapsed = 00:01:18 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41610 ; free virtual = 51229
+Phase 3.3 Small Shape DP | Checksum: 14adcae2e
+
+Time (s): cpu = 00:03:23 ; elapsed = 00:01:23 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41640 ; free virtual = 51257
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 116b84c45
+
+Time (s): cpu = 00:03:26 ; elapsed = 00:01:26 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41631 ; free virtual = 51253
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 1fb9bbcbb
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:01:26 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41630 ; free virtual = 51251
+Phase 3 Detail Placement | Checksum: 1fb9bbcbb
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:01:26 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41628 ; free virtual = 51251
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 215ca6fde
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.416 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1fcfd9629
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.87 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41612 ; free virtual = 51259
+INFO: [Place 46-35] Processed net U_Core/GEN_ETH.U_Rudp/U_10GigE/PwrUpRst_Inst/rstOut, inserted BUFG to drive 22433 loads.
+INFO: [Place 46-45] Replicated bufg driver U_Core/GEN_ETH.U_Rudp/U_10GigE/PwrUpRst_Inst/rst_reg_replica
+INFO: [Place 46-35] Processed net U_Core/GEN_ETH.U_Rudp/U_10GigE/GEN_LANE[0].TenGigEthGthUltraScale_Inst/U_TenGigEthRst/U_phyRst/r[shift][2], inserted BUFG to drive 6131 loads.
+INFO: [Place 46-45] Replicated bufg driver U_Core/GEN_ETH.U_Rudp/U_10GigE/GEN_LANE[0].TenGigEthGthUltraScale_Inst/U_TenGigEthRst/U_phyRst/r_reg[shift][2]_replica
+INFO: [Place 46-35] Processed net U_Core/GEN_ETH.U_Rudp/U_10GigE/GEN_LANE[0].TenGigEthGthUltraScale_Inst/U_MAC/U_RxFifo/U_Fifo/fifoRst, inserted BUFG to drive 1084 loads.
+INFO: [Place 46-56] BUFG insertion identified 3 candidate nets. Inserted BUFG: 3, Replicated BUFG Driver: 2, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1f1fc6a7d
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41553 ; free virtual = 51200
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1d318efcb
+
+Time (s): cpu = 00:04:19 ; elapsed = 00:01:44 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41562 ; free virtual = 51209
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.539. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: e871cce1
+
+Time (s): cpu = 00:04:22 ; elapsed = 00:01:48 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41569 ; free virtual = 51216
+
+Time (s): cpu = 00:04:22 ; elapsed = 00:01:48 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41569 ; free virtual = 51216
+Phase 4.1 Post Commit Optimization | Checksum: e871cce1
+
+Time (s): cpu = 00:04:22 ; elapsed = 00:01:48 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41567 ; free virtual = 51213
+Netlist sorting complete. Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.33 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41577 ; free virtual = 51224
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 184b2fcb4
+
+Time (s): cpu = 00:04:25 ; elapsed = 00:01:50 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41579 ; free virtual = 51226
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                8x8|
+|___________|___________________|___________________|
+|      South|                1x1|                8x8|
+|___________|___________________|___________________|
+|       East|                1x1|                8x8|
+|___________|___________________|___________________|
+|       West|                1x1|                8x8|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 184b2fcb4
+
+Time (s): cpu = 00:04:25 ; elapsed = 00:01:51 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41579 ; free virtual = 51226
+Phase 4.3 Placer Reporting | Checksum: 184b2fcb4
+
+Time (s): cpu = 00:04:25 ; elapsed = 00:01:51 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41578 ; free virtual = 51225
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41578 ; free virtual = 51225
+
+Time (s): cpu = 00:04:25 ; elapsed = 00:01:51 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41578 ; free virtual = 51225
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 17387750e
+
+Time (s): cpu = 00:04:26 ; elapsed = 00:01:51 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41576 ; free virtual = 51223
+Ending Placer Task | Checksum: 15df00d14
+
+Time (s): cpu = 00:04:26 ; elapsed = 00:01:52 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41575 ; free virtual = 51222
+INFO: [Common 17-83] Releasing license: Implementation
+118 Infos, 20 Warnings, 10 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:04:31 ; elapsed = 00:01:53 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41749 ; free virtual = 51396
+source /home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/submodules/ruckus/vivado/run/post/place.tcl
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41684 ; free virtual = 51419
+INFO: [Common 17-1381] The checkpoint '/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/Simple10GbeRudpKcu105Example_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41760 ; free virtual = 51427
+INFO: [runtcl-4] Executing : report_io -file Simple10GbeRudpKcu105Example_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.3 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41723 ; free virtual = 51389
+INFO: [runtcl-4] Executing : report_utilization -file Simple10GbeRudpKcu105Example_utilization_placed.rpt -pb Simple10GbeRudpKcu105Example_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file Simple10GbeRudpKcu105Example_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.32 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41738 ; free virtual = 51406
+source /home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/submodules/ruckus/vivado/run/pre/phys_opt.tcl
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:08 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41698 ; free virtual = 51364
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+127 Infos, 20 Warnings, 10 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:09 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41698 ; free virtual = 51364
+source /home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/submodules/ruckus/vivado/run/post/phys_opt.tcl
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41588 ; free virtual = 51350
+INFO: [Common 17-1381] The checkpoint '/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/Simple10GbeRudpKcu105Example_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41653 ; free virtual = 51347
+source /home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/submodules/ruckus/vivado/run/pre/route.tcl
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 3a501896 ConstDB: 0 ShapeSum: 875ec4ab RouteDB: 9c412fd3
+Post Restoration Checksum: NetGraph: 162a8c25 NumContArr: 1fe17275 Constraints: 13cb7fa9 Timing: 0
+Phase 1 Build RT Design | Checksum: 49d77e43
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:01:11 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41606 ; free virtual = 51293
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 49d77e43
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:11 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41558 ; free virtual = 51246
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 49d77e43
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:11 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41558 ; free virtual = 51245
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 2079a83f0
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:01:14 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41577 ; free virtual = 51264
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 200f14fe8
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:01:23 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41498 ; free virtual = 51188
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.568  | TNS=0.000  | WHS=-0.085 | THS=-7.875 |
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00105941 %
+  Global Horizontal Routing Utilization  = 0.000146714 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 76418
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 65525
+  Number of Partially Routed Nets     = 10893
+  Number of Node Overlaps             = 1
+
+Phase 2 Router Initialization | Checksum: 21df536f2
+
+Time (s): cpu = 00:02:54 ; elapsed = 00:01:33 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41519 ; free virtual = 51209
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 21df536f2
+
+Time (s): cpu = 00:02:54 ; elapsed = 00:01:33 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41519 ; free virtual = 51209
+Phase 3 Initial Routing | Checksum: 20081c788
+
+Time (s): cpu = 00:03:13 ; elapsed = 00:01:38 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41451 ; free virtual = 51141
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 11839
+ Number of Nodes with overlaps = 971
+ Number of Nodes with overlaps = 167
+ Number of Nodes with overlaps = 35
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-467] Router swapped GT pin U_Core/GEN_ETH.U_Rudp/U_10GigE/TenGigEthGthUltraScaleClk_Inst/GthUltraScaleQuadPll_Inst/GTHE3_COMMON_Inst/GTREFCLK00 to physical pin GTHE3_COMMON_X0Y2/COM0_REFCLKOUT5
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.288  | TNS=0.000  | WHS=0.004  | THS=0.000  |
+
+Phase 4.1 Global Iteration 0 | Checksum: 31fac9dcc
+
+Time (s): cpu = 00:05:04 ; elapsed = 00:02:35 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41485 ; free virtual = 51170
+
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: 2be1332bd
+
+Time (s): cpu = 00:05:05 ; elapsed = 00:02:35 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41478 ; free virtual = 51165
+Phase 4 Rip-up And Reroute | Checksum: 2be1332bd
+
+Time (s): cpu = 00:05:05 ; elapsed = 00:02:35 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41478 ; free virtual = 51165
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 2be1332bd
+
+Time (s): cpu = 00:05:05 ; elapsed = 00:02:35 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41476 ; free virtual = 51163
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 2be1332bd
+
+Time (s): cpu = 00:05:05 ; elapsed = 00:02:35 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41476 ; free virtual = 51162
+Phase 5 Delay and Skew Optimization | Checksum: 2be1332bd
+
+Time (s): cpu = 00:05:06 ; elapsed = 00:02:36 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41475 ; free virtual = 51162
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 303fd1cc3
+
+Time (s): cpu = 00:05:22 ; elapsed = 00:02:41 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41455 ; free virtual = 51153
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.288  | TNS=0.000  | WHS=0.004  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 2154b85f9
+
+Time (s): cpu = 00:05:23 ; elapsed = 00:02:42 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41468 ; free virtual = 51146
+Phase 6 Post Hold Fix | Checksum: 2154b85f9
+
+Time (s): cpu = 00:05:23 ; elapsed = 00:02:42 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41469 ; free virtual = 51145
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 3.43739 %
+  Global Horizontal Routing Utilization  = 3.30005 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 18a0e1fef
+
+Time (s): cpu = 00:05:27 ; elapsed = 00:02:44 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41541 ; free virtual = 51187
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 18a0e1fef
+
+Time (s): cpu = 00:05:27 ; elapsed = 00:02:44 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41535 ; free virtual = 51178
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 18a0e1fef
+
+Time (s): cpu = 00:05:32 ; elapsed = 00:02:48 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41531 ; free virtual = 51192
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 1868292d1
+
+Time (s): cpu = 00:05:48 ; elapsed = 00:02:54 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41485 ; free virtual = 51173
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.288  | TNS=0.000  | WHS=0.004  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1868292d1
+
+Time (s): cpu = 00:05:48 ; elapsed = 00:02:55 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41485 ; free virtual = 51173
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:05:49 ; elapsed = 00:02:55 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41614 ; free virtual = 51302
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+142 Infos, 20 Warnings, 10 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:05:55 ; elapsed = 00:02:58 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41614 ; free virtual = 51302
+source /home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/submodules/ruckus/vivado/run/post/route.tcl
+WARNING: [Common 17-708] report_utilization: The '-name' option will be ignored because it is only relevant in GUI mode.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41504 ; free virtual = 51302
+INFO: [Common 17-1381] The checkpoint '/home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/Simple10GbeRudpKcu105Example_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41553 ; free virtual = 51278
+INFO: [runtcl-4] Executing : report_drc -file Simple10GbeRudpKcu105Example_drc_routed.rpt -pb Simple10GbeRudpKcu105Example_drc_routed.pb -rpx Simple10GbeRudpKcu105Example_drc_routed.rpx
+Command: report_drc -file Simple10GbeRudpKcu105Example_drc_routed.rpt -pb Simple10GbeRudpKcu105Example_drc_routed.pb -rpx Simple10GbeRudpKcu105Example_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/Simple10GbeRudpKcu105Example_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file Simple10GbeRudpKcu105Example_methodology_drc_routed.rpt -pb Simple10GbeRudpKcu105Example_methodology_drc_routed.pb -rpx Simple10GbeRudpKcu105Example_methodology_drc_routed.rpx
+Command: report_methodology -file Simple10GbeRudpKcu105Example_methodology_drc_routed.rpt -pb Simple10GbeRudpKcu105Example_methodology_drc_routed.pb -rpx Simple10GbeRudpKcu105Example_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/build/Simple10GbeRudpKcu105Example/Simple10GbeRudpKcu105Example_project.runs/impl_1/Simple10GbeRudpKcu105Example_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:55 ; elapsed = 00:00:12 . Memory (MB): peak = 4948.445 ; gain = 0.000 ; free physical = 41556 ; free virtual = 51267
+INFO: [runtcl-4] Executing : report_power -file Simple10GbeRudpKcu105Example_power_routed.rpt -pb Simple10GbeRudpKcu105Example_power_summary_routed.pb -rpx Simple10GbeRudpKcu105Example_power_routed.rpx
+Command: report_power -file Simple10GbeRudpKcu105Example_power_routed.rpt -pb Simple10GbeRudpKcu105Example_power_summary_routed.pb -rpx Simple10GbeRudpKcu105Example_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+155 Infos, 21 Warnings, 10 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:31 ; elapsed = 00:00:13 . Memory (MB): peak = 4953.484 ; gain = 5.039 ; free physical = 41439 ; free virtual = 51154
+INFO: [runtcl-4] Executing : report_route_status -file Simple10GbeRudpKcu105Example_route_status.rpt -pb Simple10GbeRudpKcu105Example_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file Simple10GbeRudpKcu105Example_timing_summary_routed.rpt -pb Simple10GbeRudpKcu105Example_timing_summary_routed.pb -rpx Simple10GbeRudpKcu105Example_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file Simple10GbeRudpKcu105Example_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file Simple10GbeRudpKcu105Example_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4953.484 ; gain = 0.000 ; free physical = 41384 ; free virtual = 51124
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file Simple10GbeRudpKcu105Example_bus_skew_routed.rpt -pb Simple10GbeRudpKcu105Example_bus_skew_routed.pb -rpx Simple10GbeRudpKcu105Example_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+source /home/tesla/workspace/08.rtl_design/Simple-10GbE-RUDP-KCU105-Example/firmware/submodules/ruckus/vivado/messages.tcl
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Common 17-1361}  -suppress '. The existing rule will be replaced.
+INFO: [Common 17-1565] set_msg_config should not be used to change the severity of DRC/METHODOLOGY checks. Please use the 'set_property SEVERITY <NEW_SEVERITY> [get_<drc|methodology>_checks <ID>]' command instead.
+INFO: [Common 17-1565] set_msg_config should not be used to change the severity of DRC/METHODOLOGY checks. Please use the 'set_property SEVERITY <NEW_SEVERITY> [get_<drc|methodology>_checks <ID>]' command instead.
+Command: write_bitstream -force Simple10GbeRudpKcu105Example.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R input U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__1 input U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__3 input U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R input U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__1 input U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__3 input U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_bandwidth/U_GreaterThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_bandwidth/U_GreaterThan/r_reg[diff]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_bandwidth/U_GreaterThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_bandwidth/U_GreaterThan/r_reg[diff]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_bandwidth/U_GreaterThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_bandwidth/U_GreaterThan/r_reg[diff]/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_bandwidth/U_LessThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_bandwidth/U_LessThan/r_reg[diff]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_bandwidth/U_LessThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_bandwidth/U_LessThan/r_reg[diff]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_bandwidth/U_LessThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_bandwidth/U_LessThan/r_reg[diff]/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_frameSize/U_GreaterThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_frameSize/U_GreaterThan/r_reg[diff]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_frameSize/U_GreaterThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_frameSize/U_GreaterThan/r_reg[diff]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_frameSize/U_GreaterThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_frameSize/U_GreaterThan/r_reg[diff]/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_frameSize/U_LessThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_frameSize/U_LessThan/r_reg[diff]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_frameSize/U_LessThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_frameSize/U_LessThan/r_reg[diff]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_frameSize/U_LessThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/Sync_frameSize/U_LessThan/r_reg[diff]/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/U_packetRate/U_Sync/U_GreaterThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/U_packetRate/U_Sync/U_GreaterThan/r_reg[diff]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/U_packetRate/U_Sync/U_GreaterThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/U_packetRate/U_Sync/U_GreaterThan/r_reg[diff]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/U_packetRate/U_Sync/U_GreaterThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/U_packetRate/U_Sync/U_GreaterThan/r_reg[diff]/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/U_packetRate/U_Sync/U_LessThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/U_packetRate/U_Sync/U_LessThan/r_reg[diff]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/U_packetRate/U_Sync/U_LessThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/U_packetRate/U_Sync/U_LessThan/r_reg[diff]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/U_packetRate/U_Sync/U_LessThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[0].U_AxiStreamMon/U_packetRate/U_Sync/U_LessThan/r_reg[diff]/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_bandwidth/U_GreaterThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_bandwidth/U_GreaterThan/r_reg[diff]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_bandwidth/U_GreaterThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_bandwidth/U_GreaterThan/r_reg[diff]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_bandwidth/U_GreaterThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_bandwidth/U_GreaterThan/r_reg[diff]/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_bandwidth/U_LessThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_bandwidth/U_LessThan/r_reg[diff]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_bandwidth/U_LessThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_bandwidth/U_LessThan/r_reg[diff]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_bandwidth/U_LessThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_bandwidth/U_LessThan/r_reg[diff]/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_frameSize/U_GreaterThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_frameSize/U_GreaterThan/r_reg[diff]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_frameSize/U_GreaterThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_frameSize/U_GreaterThan/r_reg[diff]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_frameSize/U_GreaterThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_frameSize/U_GreaterThan/r_reg[diff]/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_frameSize/U_LessThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_frameSize/U_LessThan/r_reg[diff]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_frameSize/U_LessThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_frameSize/U_LessThan/r_reg[diff]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_frameSize/U_LessThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/Sync_frameSize/U_LessThan/r_reg[diff]/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/U_packetRate/U_Sync/U_GreaterThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/U_packetRate/U_Sync/U_GreaterThan/r_reg[diff]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/U_packetRate/U_Sync/U_GreaterThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/U_packetRate/U_Sync/U_GreaterThan/r_reg[diff]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/U_packetRate/U_Sync/U_GreaterThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/U_packetRate/U_Sync/U_GreaterThan/r_reg[diff]/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/U_packetRate/U_Sync/U_LessThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/U_packetRate/U_Sync/U_LessThan/r_reg[diff]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/U_packetRate/U_Sync/U_LessThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/U_packetRate/U_Sync/U_LessThan/r_reg[diff]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/U_packetRate/U_Sync/U_LessThan/r_reg[diff] input U_Core/GEN_ETH.U_Rudp/U_AXIS_MON/GEN_VEC[1].U_AxiStreamMon/U_packetRate/U_Sync/U_LessThan/r_reg[diff]/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R output U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__0 output U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__1 output U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__2 output U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__3 output U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__4 output U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R output U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__0 output U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__1 output U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__2 output U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__3 output U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__4 output U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R multiplier stage U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__0 multiplier stage U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__1 multiplier stage U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__2 multiplier stage U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__3 multiplier stage U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__4 multiplier stage U_Core/GEN_ETH.U_Rudp/GEN_VEC[0].U_RssiServer/U_RssiCore/Monitor_INST/R__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R multiplier stage U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__0 multiplier stage U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__1 multiplier stage U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__2 multiplier stage U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__3 multiplier stage U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__4 multiplier stage U_Core/GEN_ETH.U_Rudp/GEN_VEC[1].U_RssiServer/U_RssiCore/Monitor_INST/R__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_EXT_BSCAN_WITH_CORE.id_state[0]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_EXT_BSCAN_WITH_CORE.id_state[0]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A3' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_EXT_BSCAN_WITH_CORE.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_EXT_BSCAN_WITH_CORE.bscan_switch/temp_curid[31]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A2*A1)+(A2*(~A1)*(~A5))+((~A2)))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_EXT_BSCAN_WITH_CORE.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_EXT_BSCAN_WITH_CORE.bscan_switch/temp_curid[31]_i_1/I1) is not included in the LUT equation: 'O6=(A6+~A6)*((A2*A1)+(A2*(~A1)*(~A5))+((~A2)))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC REQP-1852] BUFGCE_cascade_from_clock_buf: Cascaded clock buffers exist in the design with constant CE pin. This may result in large clock skew and timing violations. Cell BUFGCE dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_EXT_BSCAN_WITH_CORE.u_bufg_icon_tck I pin is driven by another clock buffer U_Core/GEN_ETH.U_Rudp/U_XVC/U_XvcServer/U_AxisJtagDebugBridge/U_JTAG_BSCAN/U0/bsip/U0/USE_SOFTBSCAN.U_TAP_TCKBUFG.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 81 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 65691168 bits.
+Writing bitstream ./Simple10GbeRudpKcu105Example.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+13 Infos, 71 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:01:05 ; elapsed = 00:00:43 . Memory (MB): peak = 5288.637 ; gain = 335.152 ; free physical = 41335 ; free virtual = 51040
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  6 16:41:41 2023...
